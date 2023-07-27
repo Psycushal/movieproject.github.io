@@ -1,0 +1,103 @@
+body{
+    background-color: #383838;
+}
+
+.flexcontainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.bigpic{
+    text-align: center;
+    margin-top: 47px;
+}
+
+.circ{
+    border-radius: 50%;
+}
+
+.b1{
+    border-radius: 20px;
+    background-size: cover;
+    background-image: url(choosephase1.jpg);
+    width: 226px;
+    height: 55px;
+}
+
+.b2{
+    border-radius: 20px;
+    background-size: cover;
+    background-image: url(choosephase2.jpg);
+    width: 226px;
+    height: 55px;
+}
+
+.b3{
+    border-radius: 20px;
+    background-size: cover;
+    background-image: url(choosephase3.jpg);
+    width: 226px;
+    height: 55px;
+}
+
+.b4{
+    border-radius: 20px;
+    background-size: cover;
+    background-image: url(choosephase4.jpg);
+    width: 226px;
+    height: 55px;
+}
+
+.b5{
+    border-radius: 20px;
+    background-size: cover;
+    background-image: url(redcolour.png);
+    width: 136px;
+    height: 35px;
+}
+
+
+
+.phase{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    color: white;
+}
+
+.closepic{
+    position: relative;
+    color: white;
+}
+
+.centered2{
+    position: absolute;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered{
+    position: absolute;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bd{
+    border-radius: 20px;
+}
+
+.phase1{
+    margin-top: 50px;
+}
+
+.closepic{
+    text-align: center;
+    margin-top: 60px;
+}
+img{
+    object-fit: cover;
+
+}

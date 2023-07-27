@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiWanda</title>
+    <link rel="stylesheet" href="hiwanda.css">
+    
+</head>
+<body>
+    <?xml version="1.0" standalone="no"?>
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> <!--?xml version="1.0" ?--><svg height="14px" id="icon" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="18px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2 s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2 S29.104,22,28,22z" id="mainIconPathAttribute"></path></svg>
+    <h1 id="heading">Hi Wanda!!!</h1>
+    <div class="flexcontainer">
+        <div class="phase phase1">
+            <button class="b"></button>
+            <div class="centered">Your History</div>
+        </div>
+        <div class="phase">
+            <button class="b"></button>
+            <div class="centered">My Points</div>        
+        </div>
+        <div class="phase">
+            <button class="b"></button>
+            <div class="centered">Contact us</div>
+        </div>
+        <div><p class="scratch">Scratch for a chance to win a free movie ticket</p></div>
+        <div class="scratchcard">
+            <img class="scrd" src="scratchcard.jpg" alt="scratch card">
+        </div>
+    </div>
+    <div class="navbar"><div class="navigation">
+        <ul>
+            <li class="list active">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="location-outline"></ion-icon>
+                    </span>
+                    <span class="text">Location</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="ticket-outline"></ion-icon>
+                    </span>
+                    <span class="text">Ticket</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="text">Profile</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div>
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+        item.addEventListener('click',activeLink));
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>    
+</div>
+</body>
+</html>
