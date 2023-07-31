@@ -1,6 +1,9 @@
 body{
     background-color: #383838
 }
+button{
+    background-color: #383838;
+}
 svg{
     margin-top: 31px;
     margin-left: 34px;
@@ -21,7 +24,7 @@ svg{
 .b{
     border-radius: 20px;
     background-size: cover;
-    background-color: #212121;
+    background-color: #383838;
     width: 311px;
     height: 49px;
 }
@@ -65,7 +68,7 @@ svg{
     font-family: 'Roboto', sans-serif;
 }
 :root{
-    --clr:#222327;
+    --clr:#383838;
 }
 .navbar{
     display: flex;
@@ -77,7 +80,7 @@ svg{
 .navigation{
     width: 400px;
     height: 70px;
-    background: #fff;
+    background: grey;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,35 +143,12 @@ svg{
     position: absolute;
     width: 70px;
     height: 70px;
-    background: #29fd53;
+    background: #D8464F;
     border-radius: 50%;
     border: 6px solid var(--clr);
     transition: 0.5s;
 }
-.indicator::before
-{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: -22px;
-    width: 20px;
-    height: 20px;
-    background: transparent;
-    border-top-right-radius: 20px;
-    box-shadow: 1px -10px 0 0 var(--clr);
-}
-.indicator::after
-{
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: -22px;
-    width: 20px;
-    height: 20px;
-    background: transparent;
-    border-top-right-radius: 20px;
-    box-shadow: -1px -10px 0 0 var(--clr);
-}
+
 .navigation ul li:nth-child(1).active ~ .indicator{
     transform: translateX(calc(70px * 0));
 }
@@ -182,5 +162,5 @@ svg{
 }
 .navigation ul li:nth-child(4).active ~ .indicator
 {
-    transform: translateX(calc(70px * 3));
+    transform: translateX(calc(70px * 3));
 }
