@@ -4,16 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <?xml version="1.0" standalone="no"?>
     <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
     "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> <!--?xml version="1.0" ?--><svg height="14px" id="icon" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="18px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2 s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2 S29.104,22,28,22z" id="mainIconPathAttribute"></path></svg> 
-    <h1 id="h">SEARCH</h1>
+    <h1 id="heading">Search</h1>
     <label>
         <input type="text" placeholder="Search">
       </label>
-    <p><a href="phase1.html">fvuh</a></p>
+    <h1 id="h">Popular</h1>
+    <div class="popular">
+        <div class="pic"><img src="img1.jpg" alt="image" height="180px" width="150px"></div>
+        <div class="pic"><img src="img2.jpg" alt="image" height="180px" width="150px"></div>
+    </div>
+    <h1 id="h">Coming Soon</h1>
+    <div class="popular">
+        <div class="pic"><img src="img1.jpg" alt="image" height="180px" width="150px"></div>
+        <div class="pic"><img src="img2.jpg" alt="image" height="180px" width="150px"></div>
+    </div>
+    <h1 id="h">Must Watch</h1>
+    <div class="popular">
+        <div class="pic"><img src="img1.jpg" alt="image" height="180px" width="150px"></div>
+        <div class="pic"><img src="img2.jpg" alt="image" height="180px" width="150px"></div>
+    </div>
+    <div class="navbar"><div class="navigation">
+        <ul>
+            <li class="list active">
+                <a href="index.html">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="location.html">
+                    <span class="icon">
+                        <ion-icon name="location-outline"></ion-icon>
+                    </span>
+                    <span class="text">Location</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="ticket.html">
+                    <span class="icon">
+                        <ion-icon name="ticket-outline"></ion-icon>
+                    </span>
+                    <span class="text">Ticket</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="hiwanda.html">
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="text">Profile</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div>
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+        item.addEventListener('click',activeLink));
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>    
+</div>
+
 </body>
 </html>
